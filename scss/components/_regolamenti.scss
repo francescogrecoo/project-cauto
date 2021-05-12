@@ -1,0 +1,41 @@
+.sectRego{
+    width: 100%;
+    height: auto;
+    margin-top: 10rem;
+
+    .contRego{
+        width: $width;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;  
+        align-items: center;
+    }
+
+    .contMore{
+        @include arrowMore();
+    }
+
+    #imgRego{
+        width: 450px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .textRego{
+        width: 45%;
+
+        & p{
+            margin: 1rem 0rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {    
+    .sectRego{
+        .contRego{
+            width: $wLarge;
+        }
+    }
+}

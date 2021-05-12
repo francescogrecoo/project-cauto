@@ -1,0 +1,55 @@
+.sectFast{
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+
+    .contFast{
+        width: $width;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+    }
+
+    .contMore{
+        @include arrowMore();
+    }
+    
+    #imgFast{
+        width: 450px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .textFast{
+        text-align: right;
+        width: 45%;
+        height: 100%;
+
+        & p{
+            margin: 1rem 0rem;
+        }
+    }
+}
+
+#arrow{
+    position: absolute;
+    display: block;
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    left: 47.5vw;   
+    transform: rotate(100deg);
+    z-index: 1;
+    margin-top: 1.1rem;
+    fill: $main;
+}
+
+@media only screen and (min-width: 1367px) {    
+    .sectFast{
+        .contFast{
+            width: $wLarge;
+        }
+    }
+}

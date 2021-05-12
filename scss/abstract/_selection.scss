@@ -1,0 +1,11 @@
+//firefox
+
+::-moz-selection {
+    color: $heading;
+    background: $light;
+}
+  
+::selection {
+    color: $heading;
+    background: $light;
+}

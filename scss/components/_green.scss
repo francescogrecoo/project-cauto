@@ -1,0 +1,35 @@
+.sectGreen{
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+    background-color: $back;
+    padding: 1rem 0rem 2.2rem 0rem;
+
+    .contGreen{
+        width: $width;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .contMore{
+            @include arrowMore();
+        }
+
+        .textGreen{
+            text-align: center;
+            width: 50%;
+
+            & > h3{
+                color: $heading;
+                font-size: 1.3rem;
+            }
+
+            & p{
+                margin: 0.8rem 0rem;
+            }
+        }
+    }
+}
+

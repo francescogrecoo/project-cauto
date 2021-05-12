@@ -1,0 +1,49 @@
+.mainPost{
+    width: 100%;
+    color: #292929;
+
+    .sectPost{
+        width: 60%;
+        margin: auto;
+        padding: 2rem;
+
+        #postImg{
+            width: 100%;
+        }
+
+        #titlePost{
+            font-size: 3rem;
+            color: $heading;
+            position: relative;
+            padding-bottom: 1rem;
+            margin-top: 2rem;
+            
+            &:before{
+                content: '';
+                background-color: $main;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 8px;
+                width: 10%;
+                
+            }
+        }
+
+        & h2{
+            margin-top: 2rem;
+        }
+
+        & p{
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width:1367px){
+    .mainPost{
+        .sectPost{
+            width: 50%;
+        }
+    }
+}

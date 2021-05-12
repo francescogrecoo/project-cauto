@@ -1,0 +1,40 @@
+.sectFirst{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+
+    .contFirst{
+        width: $width;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        #mainImg{
+            width: 450px;
+        }
+
+        #titleFirst{
+            font-size: 3rem;
+            color: $heading;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        & > div p{
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: $main;
+            font-weight: 600;
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {    
+    .sectFirst{
+        .contFirst{
+            width: $wLarge;
+        }
+    }
+}
