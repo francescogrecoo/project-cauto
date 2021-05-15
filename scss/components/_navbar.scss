@@ -1,4 +1,4 @@
-$heightNav : 9vh;
+$heightNav : 10vh;
 $heightLargeNav : 7vh;
 
 
@@ -15,26 +15,37 @@ nav{
         box-shadow: 2px 0 6px #dadce0, inset 0 -1px 0 0 #dadce0;
         z-index: 9999;
 
-        .navLinks{
+        .contNavLink{
             display: flex;
-            list-style-type: none;
-            width: 75vw;
-            margin: auto;
             justify-content: space-between;
             align-items: center;
+            width: 75vw;
             height: $heightNav;
-            text-transform: uppercase;
+            margin: auto;
 
-            .link a{
-                color: $heading;
-                font-weight: 700;
-                font-size: 1rem;
-                transition: 0.2s;
-                padding: 0.5rem;
-                border-radius: 8px;
-    
-                &:hover{
-                    background-color: $back;
+            #logo{
+                width: 50px;
+                height: 50px;
+            }
+
+            .navLinks{
+                display: flex;
+                list-style-type: none;
+                width: 55%;
+                justify-content: space-between;
+                align-items: center;
+
+                .link a{
+                    color: $heading;
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 0.5rem;
+                    border-radius: 8px;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color: $back;
+                    }
                 }
             }
         }
@@ -52,8 +63,13 @@ nav{
         height: $heightLargeNav;
         .contNav{
             height: $heightLargeNav;
+
+            .contNavLink{
+                height: $heightLargeNav;
+            }
+
             .navLinks{
-                width: 65vw;
+                width: 50%;
                 height:$heightLargeNav;
             }
         }

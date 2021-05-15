@@ -30,14 +30,42 @@
             }
         }
 
-        & h2{
-            margin-top: 2rem;
+        & h2,h3,img{
+            margin-top: 2.5rem;
+            position: relative;
         }
 
         & p{
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
     }
+
+    h3{
+        font-size: 1.5rem;
+        
+        &::before{
+            content: '- ';
+            color: $main;
+            font-size: 1.5rem;
+            
+        }
+    }
+}
+
+strong{
+    color: $main;
+}
+
+.imgPost{
+    display: block;
+    margin: auto;
+}
+
+
+
+
+.current{
+    background-color: $back;
 }
 
 @media only screen and (min-width:1367px){

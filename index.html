@@ -19,15 +19,17 @@
         <nav>
             <div class="contNav">
                 <div class="contLink">
-                    <ul class="navLinks">
-                        <li class="link"><a href="#fast">Fast Fashion</a></li>
-                        <li class="link"><a href="#rego">Regolamenti</a></li>
-                        <li class="link"><a href="#green">Green Marketing</a></li>
-                        <li class="link"><a href="#wrad">Wrad</a></li>
-                    </ul>
+                    <div class="contNavLink">
+                        <a href="#"><img src="img/logo.svg" alt="logo" id="logo"></a>
+                        <ul class="navLinks">
+                            <li class="link"><a href="#fast">Fast Fashion</a></li>
+                            <li class="link"><a href="#green">Green Washing</a></li>
+                            <li class="link"><a href="#wrad">Wrad</a></l>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>     
+        </nav>
         <!-- End Navbar -->
         <!-- First -->
         <section class="sectFirst">
@@ -42,7 +44,7 @@
         <!-- End First -->
     </div>
     <!-- Main -->
-    <main>  
+    <main>
         <!-- Fast Fashion -->
         <section class="sectFast" id="fast">
             <div class="contFast">
@@ -54,7 +56,7 @@
                     </p>
                     <div class="contMore">
                         <a href="html/fast.html">
-                            Scoprilo qui  
+                            Scoprilo qui
                         </a>
                     </div>
                 </div>
@@ -68,23 +70,6 @@
             </svg>
         </div>
         <!-- End Fast Fashion -->
-        
-        <!-- Regolamenti -->
-        <section class="sectRego" id="rego">
-            <div class="contRego">
-                <img src="img/governo.jpg" alt="governo" id="imgRego">
-                <div class="textRego">
-                    <h3>Regolamenti sul Fast Fashion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sint porro inventore velit mollitia, cum numquam ipsa quaerat architecto dicta unde repellendus voluptatibus dolorem consequatur laborum quidem saepe nulla aliquid.</p>
-                    <div class="contMore">
-                        <a href="html/regolamenti.html">
-                            Approfondisci l'argomento   
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Regolamenti -->
 
         <!-- Green Marketing -->
         <section class="sectGreen" id="green">
@@ -92,13 +77,14 @@
             <div class="contGreen">
                 <img src="img/lampadina green.png" id="imgGreen" alt="green marketing">
                 <div class="textGreen">
-                    <h3>Green Marketing</h3>
+                    <h3>Green Washing</h3>
                     <p>
-                        Spieghiamo il fenomeno che è dietro a moltissimi prodotti nel mercato
+                        Spieghiamo come grandi imprenditori riescano a rendere un prodotto appetibile
+                        per tutti le tipologie di consumatori
                     </p>
                     <div class="contMore">
                         <a href="html/green.html">
-                            Approfondisci l'argomento   
+                            Approfondisci l'argomento
                         </a>
                     </div>
                 </div>
@@ -117,16 +103,33 @@
 
     </main>
     <!-- End Main -->
-        
+
+    <!-- Footer -->
+    <footer>
+        <div class="contFooter">
+            <p>
+                Lavoro realizzato dalla 3'A SIA 
+                <a href="https://www.donmilanimontichiari.edu.it/" rel="noopener noreferrer" target="_blank">
+                    Don Milani Montichiari
+                </a> <br>
+                in collaborazione con la cooperativa sociale 
+                <a href="https://www.cauto.it/" target="_blank" rel="noopener noreferrer">
+                    Cauto
+                </a>
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
     <!-- Go Up -->
     <div class="contGo">
-        <div class="goUp" onclick="onTop()"> 
+        <div class="goUp" onclick="onTop()">
             <svg xmlns="http://www.w3.org/2000/svg" id="btnGo" viewBox="0 0 24 24">
                 <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.293,14.707L12,10.414l-4.293,4.293 l-1.414-1.414L12,7.586l5.707,5.707L16.293,14.707z"></path>
             </svg>
         </div>
     </div>
     <!-- End Go Up -->
-    
+
 </body>
 </html>

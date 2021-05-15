@@ -20,48 +20,65 @@
 
 nav {
   width: 100%;
-  height: 9vh;
+  height: 10vh;
   top: 0;
 }
 
 nav .contNav {
   position: fixed;
   width: 100%;
-  height: 9vh;
+  height: 10vh;
   background-color: white;
   -webkit-box-shadow: 2px 0 6px #dadce0, inset 0 -1px 0 0 #dadce0;
           box-shadow: 2px 0 6px #dadce0, inset 0 -1px 0 0 #dadce0;
   z-index: 9999;
 }
 
-nav .contNav .navLinks {
+nav .contNav .contNavLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
-  width: 75vw;
-  margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 9vh;
-  text-transform: uppercase;
+  width: 75vw;
+  height: 10vh;
+  margin: auto;
 }
 
-nav .contNav .navLinks .link a {
+nav .contNav .contNavLink #logo {
+  width: 50px;
+  height: 50px;
+}
+
+nav .contNav .contNavLink .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 55%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .contNav .contNavLink .navLinks .link a {
   color: #0F1C07;
-  font-weight: 700;
-  font-size: 1rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  font-size: 18px;
+  font-weight: 600;
   padding: 0.5rem;
   border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-nav .contNav .navLinks .link a:hover {
+nav .contNav .contNavLink .navLinks .link a:hover {
   background-color: #c4edcf;
 }
 
@@ -77,8 +94,11 @@ nav .contNav .navLinks .link a:hover {
   nav .contNav {
     height: 7vh;
   }
+  nav .contNav .contNavLink {
+    height: 7vh;
+  }
   nav .contNav .navLinks {
-    width: 65vw;
+    width: 50%;
     height: 7vh;
   }
 }
@@ -112,7 +132,7 @@ nav .contNav .navLinks .link a:hover {
 }
 
 .sectFirst .contFirst #titleFirst {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #0F1C07;
   font-weight: bold;
   text-transform: uppercase;
@@ -188,13 +208,18 @@ nav .contNav .navLinks .link a:hover {
   height: 100%;
 }
 
+.sectFast .textFast h3 {
+  font-size: 1.5rem;
+}
+
 .sectFast .textFast p {
   margin: 1rem 0rem;
+  font-size: 1.1rem;
 }
 
 #arrow {
   position: absolute;
-  display: block;
+  display: none;
   margin: auto;
   height: 120px;
   width: 120px;
@@ -203,12 +228,19 @@ nav .contNav .navLinks .link a:hover {
           transform: rotate(100deg);
   z-index: 1;
   margin-top: 1.1rem;
-  fill: #34A853;
 }
 
 @media only screen and (min-width: 1367px) {
   .sectFast .contFast {
-    width: 60vw;
+    width: 50vw;
+  }
+  #arrow {
+    margin-top: 0.7rem;
+    left: 45vw;
+    width: 150px;
+    height: 150px;
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
   }
 }
 
@@ -336,17 +368,18 @@ nav .contNav .navLinks .link a:hover {
 
 .sectGreen .contGreen .textGreen > h3 {
   color: #0F1C07;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .sectGreen .contGreen .textGreen p {
-  margin: 0.8rem 0rem;
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
 }
 
 .sectWrad {
   width: 100%;
   height: auto;
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .sectWrad .contWrad {
@@ -360,7 +393,7 @@ nav .contNav .navLinks .link a:hover {
   position: absolute;
   font-size: 5rem;
   top: 100px;
-  left: 40%;
+  left: 30%;
   color: #333333;
 }
 
@@ -391,6 +424,29 @@ nav .contNav .navLinks .link a:hover {
   .sectWrad .contWrad {
     width: 60vw;
   }
+}
+
+footer {
+  width: 100%;
+  margin: 7rem 0rem 2rem 0rem;
+}
+
+footer .contFooter {
+  width: 70vw;
+  margin: auto;
+  border-top: 1px solid #e4f7e9;
+}
+
+footer .contFooter p {
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+footer .contFooter p a {
+  color: #34A853;
+  font-weight: 500;
 }
 
 .mainPost {
@@ -426,12 +482,36 @@ nav .contNav .navLinks .link a:hover {
   width: 10%;
 }
 
-.mainPost .sectPost h2 {
-  margin-top: 2rem;
+.mainPost .sectPost h2, .mainPost .sectPost h3, .mainPost .sectPost img {
+  margin-top: 2.5rem;
+  position: relative;
 }
 
 .mainPost .sectPost p {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.mainPost h3 {
+  font-size: 1.5rem;
+}
+
+.mainPost h3::before {
+  content: '- ';
+  color: #34A853;
+  font-size: 1.5rem;
+}
+
+strong {
+  color: #34A853;
+}
+
+.imgPost {
+  display: block;
+  margin: auto;
+}
+
+.current {
+  background-color: #c4edcf;
 }
 
 @media only screen and (min-width: 1367px) {
@@ -443,7 +523,7 @@ nav .contNav .navLinks .link a:hover {
 .contGo {
   position: absolute;
   position: fixed;
-  bottom: 0rem;
+  bottom: 0.5rem;
   right: 1rem;
   display: none;
 }
@@ -527,5 +607,6 @@ a {
 
 p {
   line-height: 25px;
+  color: #1e1e1e;
 }
 /*# sourceMappingURL=style.css.map */

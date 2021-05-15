@@ -1,7 +1,7 @@
 .sectWrad{
     width: 100%;
     height: auto;
-    margin-top: 5rem ;
+    margin-top: 7rem;
 
     .contWrad{
         width: $width;
@@ -9,11 +9,11 @@
         margin: auto;  
         position: relative;
 
-        &  a{
+        & a{
             position: absolute;
             font-size: 5rem;
             top: 100px;
-            left: 40%;
+            left: 30%;
             color: #333333;
 
             &::before{

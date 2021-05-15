@@ -21,6 +21,7 @@
 @import 'components/regolamenti';
 @import 'components/green';
 @import 'components/wrad';
+@import 'components/footer';
 @import 'components/post';
 @import 'components/btnup';
 
@@ -36,5 +37,6 @@ a{
 
 p{
     line-height: 25px;
+    color: $text;
 }
 
