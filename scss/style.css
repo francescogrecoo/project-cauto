@@ -122,7 +122,7 @@ nav .contNav #burger {
     display: flex;
     right: 0;
     top: 10vh;
-    width: 50vw;
+    width: 80vw;
     height: 90vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -144,7 +144,7 @@ nav .contNav #burger {
             box-shadow: inset 1px 0 0 0 #dadce0;
   }
   nav .contNav .contNavLink .navLinks .link a {
-    font-size: 18px;
+    font-size: 22px;
   }
   nav .contNav .contNavLink .navLinks-active {
     -webkit-transform: translateX(0%);
@@ -208,7 +208,7 @@ nav .contNav #burger {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .sectFirst .contFirst {
-    width: 100%;
+    width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -216,7 +216,9 @@ nav .contNav #burger {
     text-align: center;
   }
   .sectFirst .contFirst #mainImg {
-    width: 400px;
+    width: 100%;
+    margin: auto;
+    display: block;
   }
 }
 
@@ -313,6 +315,11 @@ nav .contNav #burger {
     margin: 1rem 0rem;
     font-size: 1.1rem;
   }
+  .sectFast #imgFast {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+  }
 }
 
 .sectGreen {
@@ -402,7 +409,6 @@ nav .contNav #burger {
 
 .sectWrad .contWrad {
   width: 70vw;
-  height: 100%;
   margin: auto;
   position: relative;
 }
@@ -452,11 +458,11 @@ nav .contNav #burger {
     width: 100%;
   }
   .sectWrad .contWrad a {
-    font-size: 4.5rem;
+    font-size: 4rem;
     left: 15%;
   }
   .sectWrad .contWrad #imgWrad {
-    width: 520px;
+    width: 100%;
     margin: auto;
     display: block;
   }
@@ -581,6 +587,11 @@ footer .contFooter p a {
   .sectEco .textEco p {
     margin: 1rem 0rem;
     font-size: 1.1rem;
+  }
+  .sectEco #imgEco {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
   }
 }
 
