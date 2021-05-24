@@ -61,9 +61,6 @@ strong{
     margin: auto;
 }
 
-
-
-
 .current{
     background-color: $back;
 }
@@ -74,4 +71,19 @@ strong{
             width: 50%;
         }
     }
+}
+
+@media only screen and (min-width:0px) and (max-width: 767px){
+    .mainPost{
+        .sectPost{
+            width: 100%;
+            padding: 1rem;
+        }
+
+        h3{
+            font-size: 1.3rem;
+        }
+    }
+
+    
 }

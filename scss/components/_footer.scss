@@ -1,22 +1,31 @@
 footer{
     width: 100%;
-    margin: 7rem 0rem 2rem 0rem;
+    margin: 5rem 0rem 2rem 0rem;
 
     .contFooter{
         width: $width;
         margin: auto;
         border-top: 1px solid $light;
+        border-bottom: 1px solid $light;
 
         & p{
             text-align: center;
             color: $text;
             font-size: 1.1rem;
-            margin-top: 2rem;
+            margin: 2rem 0rem;
 
             & a{
                 color: $main;
                 font-weight: 500;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {    
+    footer{
+        .contFooter{
+            width: 95vw;
         }
     }
 }

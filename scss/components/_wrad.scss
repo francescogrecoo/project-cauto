@@ -47,3 +47,24 @@
         }
     }
 }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {    
+    .sectWrad{
+        margin: 5rem 0rem 2rem 0rem;
+    
+        .contWrad{
+            width: 100%; 
+
+            & a{
+                font-size: 4.5rem;
+                left: 15%;
+            }
+            
+            #imgWrad{
+                width: 520px;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}

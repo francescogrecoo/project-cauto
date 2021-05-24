@@ -13,3 +13,11 @@ window.addEventListener('scroll' , () => {
 function onTop(){
     window.scrollTo(0,0);
 }
+
+//navbar
+let btnNav = document.querySelector('#burger');
+let navActive = document.querySelector('.navLinks')
+
+btnNav.addEventListener('click' , () => {
+    navActive.classList.toggle('navLinks-active');
+})

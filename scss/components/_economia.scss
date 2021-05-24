@@ -1,13 +1,14 @@
-.sectFast{
+.sectEco{
     width: 100%;
     height: auto;
     margin-top: 7rem;
 
-    .contFast{
+    .contEco{
         width: $width;
         height: 100%;
         margin: auto;
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;  
         align-items: center;
     }
@@ -16,14 +17,13 @@
         @include arrowMore();
     }
     
-    #imgFast{
+    #imgEco{
         width: 450px;
         height: auto;
         border-radius: 8px;
     }
 
-    .textFast{
-        text-align: right;
+    .textEco{
         width: 45%;
         height: 100%;
 
@@ -38,23 +38,14 @@
     }
 }
 
-
-@media only screen and (min-width: 1367px) {    
-    .sectFast{
-        .contFast{
-            width: 50vw;
-        }
-    }
-}
-
 @media only screen and (min-width: 0px) and (max-width: 1024px) {    
-    .sectFast{
-        .contFast{
+    .sectEco{
+        .contEco{
             width: 100%;
             flex-direction: column;
         }
 
-        .textFast{
+        .textEco{
             margin-top: 2rem;
             text-align: center;
             width: 80%;

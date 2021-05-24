@@ -59,7 +59,7 @@ nav .contNav .contNavLink .navLinks {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  width: 55%;
+  width: 70%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -70,7 +70,7 @@ nav .contNav .contNavLink .navLinks {
 
 nav .contNav .contNavLink .navLinks .link a {
   color: #0F1C07;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   padding: 0.5rem;
   border-radius: 8px;
@@ -80,6 +80,14 @@ nav .contNav .contNavLink .navLinks .link a {
 
 nav .contNav .contNavLink .navLinks .link a:hover {
   background-color: #c4edcf;
+}
+
+nav .contNav #burger {
+  width: 50px;
+  height: 50px;
+  fill: #0F1C07;
+  display: none;
+  cursor: pointer;
 }
 
 .headerBack {
@@ -100,6 +108,53 @@ nav .contNav .contNavLink .navLinks .link a:hover {
   nav .contNav .navLinks {
     width: 50%;
     height: 7vh;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  nav .contNav .contNavLink {
+    width: 90vw;
+  }
+  nav .contNav .contNavLink .navLinks {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0;
+    top: 10vh;
+    width: 50vw;
+    height: 90vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #fff;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    -webkit-box-shadow: inset 1px 0 0 0 #dadce0;
+            box-shadow: inset 1px 0 0 0 #dadce0;
+  }
+  nav .contNav .contNavLink .navLinks .link a {
+    font-size: 18px;
+  }
+  nav .contNav .contNavLink .navLinks-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  nav .contNav #burger {
+    display: block;
+    background-color: #e4f7e9;
+    border-radius: 20px 4px;
+    padding: 0.3rem;
   }
 }
 
@@ -148,6 +203,20 @@ nav .contNav .contNavLink .navLinks .link a:hover {
 @media only screen and (min-width: 1367px) {
   .sectFirst .contFirst {
     width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sectFirst .contFirst {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .sectFirst .contFirst #mainImg {
+    width: 400px;
   }
 }
 
@@ -217,99 +286,32 @@ nav .contNav .contNavLink .navLinks .link a:hover {
   font-size: 1.1rem;
 }
 
-#arrow {
-  position: absolute;
-  display: none;
-  margin: auto;
-  height: 120px;
-  width: 120px;
-  left: 47.5vw;
-  -webkit-transform: rotate(100deg);
-          transform: rotate(100deg);
-  z-index: 1;
-  margin-top: 1.1rem;
-}
-
 @media only screen and (min-width: 1367px) {
   .sectFast .contFast {
     width: 50vw;
   }
-  #arrow {
-    margin-top: 0.7rem;
-    left: 45vw;
-    width: 150px;
-    height: 150px;
-    -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .sectFast .contFast {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-}
-
-.sectRego {
-  width: 100%;
-  height: auto;
-  margin-top: 10rem;
-}
-
-.sectRego .contRego {
-  width: 70vw;
-  height: auto;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sectRego .contMore > a {
-  color: #34A853;
-  font-size: 1.2rem;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 0.3rem;
-}
-
-.sectRego .contMore > a::before {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 3px;
-  background-color: #34A853;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-}
-
-.sectRego .contMore > a:hover::before {
-  width: 100%;
-}
-
-.sectRego #imgRego {
-  width: 450px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.sectRego .textRego {
-  width: 45%;
-}
-
-.sectRego .textRego p {
-  margin: 1rem 0rem;
-}
-
-@media only screen and (min-width: 1367px) {
-  .sectRego .contRego {
-    width: 60vw;
+  .sectFast .textFast {
+    margin-top: 2rem;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+  }
+  .sectFast .textFast h3 {
+    font-size: 1.5rem;
+  }
+  .sectFast .textFast p {
+    margin: 1rem 0rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -376,6 +378,22 @@ nav .contNav .contNavLink .navLinks .link a:hover {
   font-size: 1.1rem;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sectGreen .contGreen {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectGreen .contGreen .textGreen {
+    margin-top: 1rem;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+  }
+}
+
 .sectWrad {
   width: 100%;
   height: auto;
@@ -426,27 +444,144 @@ nav .contNav .contNavLink .navLinks .link a:hover {
   }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sectWrad {
+    margin: 5rem 0rem 2rem 0rem;
+  }
+  .sectWrad .contWrad {
+    width: 100%;
+  }
+  .sectWrad .contWrad a {
+    font-size: 4.5rem;
+    left: 15%;
+  }
+  .sectWrad .contWrad #imgWrad {
+    width: 520px;
+    margin: auto;
+    display: block;
+  }
+}
+
 footer {
   width: 100%;
-  margin: 7rem 0rem 2rem 0rem;
+  margin: 5rem 0rem 2rem 0rem;
 }
 
 footer .contFooter {
   width: 70vw;
   margin: auto;
   border-top: 1px solid #e4f7e9;
+  border-bottom: 1px solid #e4f7e9;
 }
 
 footer .contFooter p {
   text-align: center;
   color: #1e1e1e;
   font-size: 1.1rem;
-  margin-top: 2rem;
+  margin: 2rem 0rem;
 }
 
 footer .contFooter p a {
   color: #34A853;
   font-weight: 500;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer .contFooter {
+    width: 95vw;
+  }
+}
+
+.sectEco {
+  width: 100%;
+  height: auto;
+  margin-top: 7rem;
+}
+
+.sectEco .contEco {
+  width: 70vw;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectEco .contMore > a {
+  color: #34A853;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.sectEco .contMore > a::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #34A853;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.sectEco .contMore > a:hover::before {
+  width: 100%;
+}
+
+.sectEco #imgEco {
+  width: 450px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sectEco .textEco {
+  width: 45%;
+  height: 100%;
+}
+
+.sectEco .textEco h3 {
+  font-size: 1.5rem;
+}
+
+.sectEco .textEco p {
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .sectEco .contEco {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectEco .textEco {
+    margin-top: 2rem;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+  }
+  .sectEco .textEco h3 {
+    font-size: 1.5rem;
+  }
+  .sectEco .textEco p {
+    margin: 1rem 0rem;
+    font-size: 1.1rem;
+  }
 }
 
 .mainPost {
@@ -517,6 +652,16 @@ strong {
 @media only screen and (min-width: 1367px) {
   .mainPost .sectPost {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mainPost .sectPost {
+    width: 100%;
+    padding: 1rem;
+  }
+  .mainPost h3 {
+    font-size: 1.3rem;
   }
 }
 
